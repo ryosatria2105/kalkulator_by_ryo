@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #67030a, #12010d); 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    width: 200%;
+    max-width: 500px;
+    background-color: #141313;
+    padding: 30px;
+    border-radius: 25px;
+    box-shadow: 0 1px 20px rgba(0, 0, 0, 0.5);
+}
+
+.kalkulator-title {
+    color: #ffffff; /* Warna teks */
+    -webkit-text-stroke: 1px #080808; /* Border teks dengan ketebalan 2px dan warna oranye */
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.intro {
+    background-color: #2d2d2dd2;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #288216;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border: 2px solid #ffffff; /* Menambahkan border dengan ketebalan 2px, garis solid, dan warna #f0a500 */
+    font-weight: bolder;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.display input {
+    background-color: #2d2d2dd2;
+    color: #ffffff;
+    border: 2px solid #ffffff; /* Border untuk input field */
+    font-size: 2rem;
+    padding: 20px;
+    width: 100%;
+    border-radius: 8px;
+    text-align: right;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px #000000; /* Menambahkan shadow di dalam tulisan input */
+}
+
+
+.buttons {
+    display: grid;
+    border: 2px solid #cfdcce;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    background-color: #2c2c2c;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.button {
+    background-color: #424242;
+    border: none;
+    border: 2px solid #000000;
+    color: white;
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button:hover {
+    background-color: #616161;
+    transform: scale(1.05);
+}
+
+.button:active {
+    background-color: #303030;
+    transform: scale(0.95);
+}
+
+.operator {
+    background-color: #f0a500;
+}
+
+.equals {
+    background-color: #5cba7d;
+}
+
+.clear {
+    background-color: #e44d4d;
+}
+
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+    }
+}

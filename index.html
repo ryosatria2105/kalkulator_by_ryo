@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KALKULATOR By RYO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <!-- Tabel Introduction -->
+        <div class="intro">
+            <h1 class="kalkulator-title">KALKULATOR By RYO</h1>
+
+        </div>
+
+        <!-- Display Area -->
+        <div class="display">
+            <input type="text" id="result" disabled value="0">
+        </div>
+
+        <!-- Calculator Buttons -->
+        <div class="buttons">
+            <button class="button" onclick="appendNumber(7)">7</button>
+            <button class="button" onclick="appendNumber(8)">8</button>
+            <button class="button" onclick="appendNumber(9)">9</button>
+            <button class="button operator" onclick="setOperator('/')">/</button>
+
+            <button class="button" onclick="appendNumber(4)">4</button>
+            <button class="button" onclick="appendNumber(5)">5</button>
+            <button class="button" onclick="appendNumber(6)">6</button>
+            <button class="button operator" onclick="setOperator('*')">*</button>
+
+            <button class="button" onclick="appendNumber(1)">1</button>
+            <button class="button" onclick="appendNumber(2)">2</button>
+            <button class="button" onclick="appendNumber(3)">3</button>
+            <button class="button operator" onclick="setOperator('-')">-</button>
+
+            <button class="button" onclick="appendNumber(0)">0</button>
+            <button class="button" onclick="appendDot()">.</button>
+            <button class="button equals" onclick="calculateResult()">=</button>
+            <button class="button operator" onclick="setOperator('+')">+</button>
+
+            <button class="button clear" onclick="clearDisplay()">C</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
